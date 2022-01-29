@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{
+  How To Cite CorText Manager
+}
+
+\author{
+  Joenio Marques da Costa \\
+  Université Gustave Eiffel
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction} % motivation
+
+Guia simplificado passo a passo para apoiar autores de software a fazer o software ser FAIR.
+Os principios FAIR surgiram de conceitos do area de gerenciamento de dados, o acronimo significa
+Findable, Accessible, Interoperable e Reusable.
+Sao uma bandeira para promover boas praticas em gerenciamento de dados, mas nao sao aplicavei diretamente a software
+devido a natureza diferente dos dois objetos, dados e software sao de longe dois artefatoss muito diferentes, apesar de
+em certas circustancias serem tratados iguais.
+
+Ajuda a publicar em repositorios publicos e controle de versao.
+Indica selecionar uma licenca e da apoio e informacao de como escolher.
+Indica registrar o codigo numa indice registro de alguma comunidade,
+indica diversos servicos, por pais, por dominio, por plataforma, etc.
+Crie as condicoes para o software ser citavel.
+Este eh o ponto do meu interesse para definir como Cortext deve ser citado,
+aqui parece ser a referencia mais fresca e atualizada,
+a recomendacao eh usar CodeMeta e Citation File Format CFF,
+era o q eu ja vinha sentindo q estes eram mesmo as ultimas recomendacoes sobre o tema.
+E por fim recomenda boas praticas de qualidade, testes, documentacao etc,
+nao se aplica para o Cortext pois o cortext ja esta estabelecido nesse contexto
+\cite{noauthor_fair_nodate}.
+
+
+
+Ha uma infinidade de ferramentas para ler, gerar ou converter CFF de e from para outros formatos, etc.
+Esta pagina tem recomendacoes como usar CITATION.cff file, como gerar DOI e o que fazer qdo o software eh proprietario,
+neste caso n eh possivel gerar doi pois nao se ha o repositorio do projeto, entao ha recomendacoes de como
+citar e como dar instrucoes para que outros citem o projeto, exatamente o que necessito para definir corretamente
+para o Cortext, devo ler com atencao e tomar notas etalhadas deste texto aqui neste documento.
+TODO ler e tomar notas
+\cite{saragon_standard_2017}.
+
+
+CodeMeta deve ser gerar um arquivo codemeta.json e colocar na raiz do repositorio Git, Github, ok mas quais as
+diferencas, similaridades, usar um ou outro em relacao ao arquivo CITATION.cff? Qual usar?
+Este artigo tem todas as respostas, devo ler urgente e com atencao, eh o ponto fundamental de como definir o arquivo e como
+se relacionado com codemeta etc...
+nesse link eh possivel encontrar as versoes e links para doc de cada especificacao https://citation-file-format.github.io/about/
+\cite{druskat_citation_2019}.
+
+
+Este documento oferece um resumido, generico checklist para desenvolvedores de software
+(seja software livre ou proprietario) usado em pesquisas podem usar para garantir que eles
+estao seguindo boas praticas sobre citacao de software. Isto ira ajudar desenvolvedores de
+obter credito para o software que eles criam, e melhorara transparencia, reproducibilidade
+e reuso.
+Quais sao os formatos de metadados apropriados?
+O formato CodeMeta.json [3]  captura metadados de software, e eh entendido como um crescente
+numero de repositorio digital, eh tambem facil de converter este para muitos esquemas
+comuns de metadados usado por repostorios de software.
+O Citation File Format (CFF) [4] eh um arquivo no formato YAML 1.2 legivel para humanos e
+maquinas que prove metadata para citacao de software.
+\cite{chue_hong_software_2019}.
+
+\section{Conclusions}
+
+* criar um espaco no site www.cortext.net e documentar como citar, com links e referencias, exemplos, etc
+* criar arquivo `CITATION.cff` com metadados do CorText, autores, abstract, url, etc
+  * https://citation-file-format.github.io/cff-initializer-javascript cliente web para gerar arquivo inicial
+* gerar arquivo `codemeta.json` a partir do `CITATION.cff`, outros formatos sao suportados tambem
+  * https://github.com/citation-file-format/cff-converter-python
+  * `cffconvert -i CITATION.cff -f codemeta -o codemeta.json`
+* publicar `CITATION.cff` e `codemeta.json`
+
+\bibliographystyle{plain}
+\bibliography{how-to-cite-cortext}
+
+\end{document}
