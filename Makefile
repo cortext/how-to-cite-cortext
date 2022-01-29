@@ -13,3 +13,9 @@ clean:
 	*.lot *.bbl *.blg *.gls *.cut *.hd \
 	*.dvi *.ps *.thm *.tgz *.zip *.rpi \
 	*.pdf
+
+codemeta.json:
+	cffconvert -f codemeta -o $@
+
+bibtex.bib:
+	cffconvert -f bibtex -o $@
