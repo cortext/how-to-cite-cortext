@@ -1,0 +1,81 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+# The Citation File Format schema version that the CITATION.cff file adheres to for providing the citation metadata
+cff-version: 1.2.0
+
+# A message to the human reader of the CITATION.cff file to let them know what to do with the citation metadata
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+
+# The name of the software or dataset
+title: CorText Manager
+
+# The type of the work that is being described by this CITATION.cff file
+type: software
+
+# The authors of a software or dataset
+authors:
+  - given-names: Philippe
+    family-names: Breucker
+    email: breucker@ifris.org
+    affiliation: INRAE
+    orcid: 'https://orcid.org/0000-0002-0642-2031'
+  - given-names: Juan-Pablo
+    family-names: Ospina Delgado
+    email: gnu.pablo@gmail.com
+    affiliation: LISIS
+  - given-names: Guillaume
+    family-names: Orsal
+    email: guillaume@orsal.net
+    affiliation: LISIS
+  - given-names: Luis-Daniel
+    family-names: Medina
+    email: luisdaniel.ld24@gmail.com
+    affiliation: LISIS
+
+# The identifiers of the software or dataset
+identifiers:
+  - type: url
+    value: 'https://managerv2.cortext.net'
+    description: The homepage Cortext Manager v2 web platform
+
+# The URL of a landing page/website for the software or dataset
+url: 'https://www.cortext.net'
+
+# A description of the software or dataset
+abstract: >-
+  Cortext Manager is a data analysis platform for
+  citizens and researchers in the social sciences and
+  humanities.
+
+# Keywords that describe the work
+keywords:
+  - corpus database
+  - statistical analysis
+  - terms extraction
+
+# The contact person, group, company, etc. for the software or dataset
+contact:
+  - address: "2 Allée Jean Renoir"
+    alias: LISIS
+    city: Noisy-le-Grand
+    country: FR
+    email: lynda.silva@univ-eiffel.fr
+    fax: "+33.(0)1.60.95.72.38"
+    location: "Camus Building, CorText room"
+    name: "Laboratoire Interdisciplinaire Sciences Innovations Sociétés"
+    post-code: 77454
+    region: "Marne-la-Vallée"
+    tel: "+33.(0)1.60.95.71.89"
+    website: "http://umr-lisis.fr"
+
+# The date the software or data set has been released
+date-released: "2020-12-01"
+
+# The URL of the software or dataset in a repository/archive
+repository: "https://ascl.net/2105.013"
+
+# The version of the software or dataset
+version: "v2"
