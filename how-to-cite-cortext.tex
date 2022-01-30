@@ -2,6 +2,10 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 
+%\usepackage[backend=biber,datamodel=software]{biblatex}
+\usepackage[backend=biber]{biblatex}
+%\usepackage{software-biblatex}
+
 \title{
   How To Cite CorText Manager
 }
@@ -12,6 +16,8 @@
 }
 
 \date{\today}
+
+\addbibresource{how-to-cite-cortext.bib}
 
 \begin{document}
 
@@ -71,6 +77,8 @@ O Citation File Format (CFF) [4] eh um arquivo no formato YAML 1.2 legivel para 
 maquinas que prove metadata para citacao de software.
 \cite{chue_hong_software_2019}.
 
+Referencia sobre software-bibtex \cite{softwareheritageorg_citing_2020}.
+
 \section{Conclusions}
 
 * criar um espaco no site www.cortext.net e documentar como citar, com links e referencias, exemplos, etc
@@ -85,7 +93,39 @@ maquinas que prove metadata para citacao de software.
 * olhar e escrever bibtex para o bibtex-software desenvolvido pelo pessoal do software heritage
 * criar RESEARCHERS.md (ou USERS.md) e DEVELOPERS.md para documentar instrucoes para quem precisa citar CorText e para os mantenedores do CorText
 
-\bibliographystyle{plain}
-\bibliography{how-to-cite-cortext}
+O cffconverter ainda nao suporta gerar saida compativel com software-bibtex https://github.com/citation-file-format/cff-converter-python/issues/152,
+entao a solucao por agora sera escrever manualmente um arquivo Bibtex manualmente seguindo a extensao software-bibtex.
+
+O biblatex-software nao esta empacotado no debian, um modo de instalar eh com o tlmgr, gerenciador
+de pacotes do TexLive.
+
+% $ tlmgr install biblatex-software
+% (running on Debian, switching to user mode!)
+% (see /usr/share/doc/texlive-base/README.tlmgr-on-Debian.md)
+% TLPDB: not a directory, not loading: /home/joenio/texmf
+% tlmgr: user mode not initialized, please read the documentation!
+
+O documento /usr/share/doc/texlive-base/README.tlmgr-on-Debian.md desaconselha o uso de tlmgr em usermode, desisti e fiz download
+dos arquivos e adicionei aqui no repositorio local.
+
+Dai vejo que meu workflow usual em Latex eh com o bibtex e nao o biblatex, para o biblatex me falta instalar os pacotes abaixo:
+
+* biber
+* texlive-bibtex-extra
+
+Baixei os arquivos da versao 1.2-3 em https://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-software
+e criei um diretorio local texmf-dist/biblatex-software e crei links simbolicos...
+
+%\bibliographystyle{plain}
+%\bibliography{how-to-cite-cortext}
+
+%\ifbacktracker
+%\printbibheading[title=References \emph{(with backref enabled)}]
+%\else
+%\printbibheading[title=References \emph{(default style)}]
+%\fi
+%\printbibliography[heading=subbibliography,type=software,title={Software Projects}]
+%\printbibliography[heading=subbibliography,nottype=software,title={Software versions, modules, excerpts and manuals}]
+\printbibliography
 
 \end{document}
