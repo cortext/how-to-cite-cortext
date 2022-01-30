@@ -2,9 +2,8 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 
-%\usepackage[backend=biber,datamodel=software]{biblatex}
-\usepackage[backend=biber]{biblatex}
-%\usepackage{software-biblatex}
+\usepackage[backend=biber,datamodel=software]{biblatex}
+\usepackage{software-biblatex}
 
 \title{
   How To Cite CorText Manager
@@ -18,6 +17,7 @@
 \date{\today}
 
 \addbibresource{how-to-cite-cortext.bib}
+\addbibresource{biblatex-software.bib}
 
 \begin{document}
 
@@ -90,7 +90,7 @@ Referencia sobre software-bibtex \cite{softwareheritageorg_citing_2020}.
 * publicar `CITATION.cff` e `codemeta.json`
 * entender e documentar qual utilidade do codemeta.json
 * melhorar o bibtex.bib geradi pelo cffconverter pois eh mto pobre n preserva quase nada do CITATION.cff
-* olhar e escrever bibtex para o bibtex-software desenvolvido pelo pessoal do software heritage
+* olhar e escrever bibtex CorText para o bibtex-software desenvolvido pelo pessoal do software heritage, criar arquivo `biblatex-software.bib`
 * criar RESEARCHERS.md (ou USERS.md) e DEVELOPERS.md para documentar instrucoes para quem precisa citar CorText e para os mantenedores do CorText
 
 O cffconverter ainda nao suporta gerar saida compativel com software-bibtex https://github.com/citation-file-format/cff-converter-python/issues/152,
@@ -106,7 +106,7 @@ de pacotes do TexLive.
 % tlmgr: user mode not initialized, please read the documentation!
 
 O documento /usr/share/doc/texlive-base/README.tlmgr-on-Debian.md desaconselha o uso de tlmgr em usermode, desisti e fiz download
-dos arquivos e adicionei aqui no repositorio local.
+dos arquivos e adicionei aqui no repositorio local. CORRECAO o pacote texlive-bibtex-extra 2021.20211217-1 no Debian testing incluid o biblatex-software.
 
 Dai vejo que meu workflow usual em Latex eh com o bibtex e nao o biblatex, para o biblatex me falta instalar os pacotes abaixo:
 
@@ -116,8 +116,10 @@ Dai vejo que meu workflow usual em Latex eh com o bibtex e nao o biblatex, para 
 Baixei os arquivos da versao 1.2-3 em https://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-software
 e criei um diretorio local texmf-dist/biblatex-software e crei links simbolicos...
 
-%\bibliographystyle{plain}
-%\bibliography{how-to-cite-cortext}
+
+Citando exemplo \cite{delebecque:hal-02090402} ...
+
+Citando CorText Manager \cite{cortext_manager_v2} ...
 
 %\ifbacktracker
 %\printbibheading[title=References \emph{(with backref enabled)}]
