@@ -21,3 +21,5 @@
 *.zip
 *.rpi
 *.swp
+*.bcf
+*.run.xml
