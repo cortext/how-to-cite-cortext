@@ -2,11 +2,7 @@ how-to-cite-cortext.pdf:
 
 %.pdf: %.tex
 	pdflatex $<
-	#makeindex main.idx -s StyleInd.ist
-	#biber how-to-cite-cortext.bcf
 	- biber $*
-	#- bibtex $*
-	#- biblatex $*
 	pdflatex $<
 	pdflatex $<
 
