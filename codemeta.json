@@ -1,0 +1,54 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "author": [
+    {
+      "@id": "https://orcid.org/0000-0002-0642-2031",
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "INRAE"
+      },
+      "familyName": "Breucker",
+      "givenName": "Philippe"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "LISIS"
+      },
+      "familyName": "Ospina Delgado",
+      "givenName": "Juan-Pablo"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "LISIS"
+      },
+      "familyName": "Orsal",
+      "givenName": "Guillaume"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "LISIS"
+      },
+      "familyName": "Medina",
+      "givenName": "Luis-Daniel"
+    }
+  ],
+  "codeRepository": "https://hal.archives-ouvertes.fr/hal-02090402",
+  "datePublished": "2020-12-01",
+  "description": "Cortext Manager is a data analysis platform for citizens and researchers in the social sciences and humanities.",
+  "keywords": [
+    "corpus database",
+    "statistical analysis",
+    "terms extraction"
+  ],
+  "name": "CorText Manager",
+  "url": "https://managerv2.cortext.net",
+  "version": "v2"
+}

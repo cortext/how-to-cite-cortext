@@ -75,7 +75,7 @@ contact:
 date-released: "2020-12-01"
 
 # The URL of the software or dataset in a repository/archive
-repository: "https://ascl.net/2105.013"
+repository: "https://hal.archives-ouvertes.fr/hal-02090402"
 
 # The version of the software or dataset
 version: "v2"
