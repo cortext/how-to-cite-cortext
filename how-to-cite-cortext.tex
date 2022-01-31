@@ -18,6 +18,12 @@
 
 \addbibresource{how-to-cite-cortext.bib}
 \addbibresource{biblatex-software.bib}
+\ExecuteBibliographyOptions{
+  halid=true,
+  swhid=true,
+  swlabels=true,
+  vcs=true,
+  license=true}
 
 \begin{document}
 
@@ -90,8 +96,10 @@ Referencia sobre software-bibtex \cite{softwareheritageorg_citing_2020}.
 * publicar `CITATION.cff` e `codemeta.json`
 * entender e documentar qual utilidade do codemeta.json
 * melhorar o bibtex.bib geradi pelo cffconverter pois eh mto pobre n preserva quase nada do CITATION.cff
-* olhar e escrever bibtex CorText para o bibtex-software desenvolvido pelo pessoal do software heritage, criar arquivo `biblatex-software.bib`
+* OK olhar e escrever bibtex CorText para o bibtex-software desenvolvido pelo pessoal do software heritage, criar arquivo `biblatex-software.bib`
 * criar RESEARCHERS.md (ou USERS.md) e DEVELOPERS.md para documentar instrucoes para quem precisa citar CorText e para os mantenedores do CorText
+* HAL nao documenta nada sobre aceitar software metadata, a descricao dos campos ao depositor n mostra nada onde software se encaixe
+  * creio que a melhor forma de arquivar os metadados do software eh atraves de um software paper, ele pode ser publicado no HAL
 
 O cffconverter ainda nao suporta gerar saida compativel com software-bibtex https://github.com/citation-file-format/cff-converter-python/issues/152,
 entao a solucao por agora sera escrever manualmente um arquivo Bibtex manualmente seguindo a extensao software-bibtex.
