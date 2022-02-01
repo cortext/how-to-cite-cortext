@@ -34,6 +34,10 @@ authors:
     family-names: Medina
     email: luisdaniel.ld24@gmail.com
     affiliation: LISIS
+  - given-names: Jean-Philippe
+    family-names: Cointet
+    email: jeanphilippe.cointet@sciencespo.fr
+    affiliation: Sciences-Po Paris
 
 # The identifiers of the software or dataset
 identifiers:
@@ -70,6 +74,14 @@ contact:
     region: "Marne-la-Vallée"
     tel: "+33.(0)1.60.95.71.89"
     website: "http://umr-lisis.fr"
+  - given-names: Marc
+    family-names: Barbier
+    email: marc.barbier@inrae.fr
+    affiliation: INRAE
+  - given-names: Lionel
+    family-names: Villard
+    email: lionel.villard@esiee.fr
+    affiliation: ESIEE
 
 # The date the software or data set has been released
 date-released: "2020-12-01"
@@ -79,3 +91,7 @@ repository: "https://hal.archives-ouvertes.fr/hal-02090402"
 
 # The version of the software or dataset
 version: "v2"
+
+# The URL of the license text under which the software or dataset is licensed
+# (only for non-standard licenses not included in the SPDX License List)
+license-url: "https://auth.cortext.net/conditions-generales-utilisation"
