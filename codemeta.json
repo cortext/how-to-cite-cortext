@@ -47,6 +47,66 @@
       },
       "familyName": "Cointet",
       "givenName": "Jean-Philippe"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "Cogniteva"
+      },
+      "familyName": "Martinez",
+      "givenName": "Cristian"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "LISIS"
+      },
+      "familyName": "Hannud Abdo",
+      "givenName": "Alexandre"
+    },
+    {
+      "@type": "Person",
+      "familyName": "Fox",
+      "givenName": "Morton"
+    },
+    {
+      "@type": "Person",
+      "familyName": "de Quatrebarbes",
+      "givenName": "Constance"
+    },
+    {
+      "@type": "Person",
+      "familyName": "Duong",
+      "givenName": "Tam-Kien"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "LISIS"
+      },
+      "familyName": "Gómez Peña",
+      "givenName": "Diego-Fernando"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "LISIS"
+      },
+      "familyName": "Andrea Sánchez Castaño",
+      "givenName": "Tatiana"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "LISIS"
+      },
+      "familyName": "Marques da Costa",
+      "givenName": "Joenio"
     }
   ],
   "codeRepository": "https://github.com/cortext/how-to-cite-cortext",
