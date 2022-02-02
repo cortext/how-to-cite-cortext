@@ -2,7 +2,6 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{fancyvrb}
-
 \usepackage[backend=biber,datamodel=software]{biblatex}
 \usepackage{software-biblatex}
 
@@ -31,79 +30,105 @@
 
 \maketitle
 
-\begin{abstract}
-Short introduction to subject of the paper \ldots 
-\end{abstract}
-
 \section{Introduction}
 
-Software desempenha um pilar fundamental para a ciencia moderna em todos os
-campos de pesquisa, entretanto ainda ha carencia de uma maior adocao de
-praticas para citar e tornar software um produto de primeira classe na ciencia,
-o reconhecimento do software como objeto legitimo no campo academico eh
-importante para incentivar pesquisadores e organizacoes construindo software
-para a pesquisa bem como para preservar o conhecimento presente nestes projetos
-\cite{alliez_attributing_2020}.
+Software desempenha um pilar fundamental na ciencia moderna em todos os campos
+do conhecimento, entretanto nao é ainda reconhecido como um produto de
+primeira classe, algo necessario para gerar credito academico e incentivar
+pesquisadores e organizacoes na construcao de software para a
+ciencia \cite{alliez_attributing_2020}.
 
-A comunidade cientifica vem debatendo propostas de como citar software apropriadamente
-e como dar visibilidade aos pesauisadores desenvolvedores e aos projetos em si,
-neste contexto tem surgido debates sobre FAIR (Findable, Accessible,
-Interoperable e Reusable) aplicado a software\cite{noauthor_fair_nodate}., formatos de arquivos Citation File Format (CFF),
-o Citation File Format (CFF) eh um arquivo no formato YAML 1.2 legivel para humanos e
-maquinas que prove metadata para citacao de software \cite{chue_hong_software_2019},
-formatos JSON para interoperabilidade,
-O formato CodeMeta.json captura metadados de software, e eh entendido como um crescente
-numero de repositorio digital, eh tambem facil de converter este para muitos esquemas
-comuns de metadados usado por repostorios de software,
-the goal of CodeMeta is to create a concept vocabulary that can be used to
-standardize the exchange of software metadata across repositories and
-organizations (GitHub, figshare, Zenodo) \cite{druskat_citation_2019}.
+Este panorama tem sido alvo de debates, como por exemplo,
+como aplicar os principios FAIR (Findable,
+Accessible, Interoperable e Reusable) a software \cite{noauthor_fair_nodate},
+e propostas como por exemplo o Citation
+File Format (CFF) \cite{chue_hong_software_2019}, um
+formato YAML para descricao de metadados de software, ou
+CodeMeta \cite{druskat_citation_2019}, um vocabulario conceitual em
+formato JSON-LD para interoperabilidade de repositorios de software.
 
-Todo este debate tem sido delineado por alguns principios ao citar software sao resumidos em: Importancia, software deve ser considerado um produto pesquisa legitimo e citavel;
-Credito e atribuicao, citacao a software deve gerar credito e reconhecimento academico;
-Identificador unico, a citacao ao software deve incluir uma maneira unica de identificacao e interoperaval;
-Persistencia, persistente, o identificador unico e os metadados do software devem ser persistir;
-Acessibilidade, citacoes ao software devem facilitar acesso ao software e ao seus metadados;
-Especificidade, citacao a software deve facilitar acesso e identificacao a versoes espeficicas do software \cite{smith_software_2016}
+Muitas destas propostas sao construidas a partir de debates centrados nos principios para citacao de software \cite{smith_software_2016}, resumidos a seguir:
 
-%O arquivo CITATION.cff file tem se tornado amplamento reconhecido entre as
-%diversas iniciativas e possui integracao e ferramentas para versao entre outros
-%formatos, CodeMeta, BibTex etc \cite{saragon_standard_2017}.
+\begin{description}
+  \item[Importancia] Software deve ser considerado um produto pesquisa legitimo e citavel;
+  \item[Credito e atribuicao] Citacao a software deve gerar credito e reconhecimento academico;
+  \item[Identificador unico] A citacao ao software deve incluir uma maneira unica de identificacao e interoperaval;
+  \item[Persistencia, persistente] O identificador unico e os metadados do software devem ser persistir;
+  \item[Acessibilidade] Citacoes ao software devem facilitar acesso ao software e ao seus metadados;
+  \item[Especificidade] Citacao a software deve facilitar acesso e identificacao a versoes espeficicas do software.
+\end{description}
 
-Assim, este texto resume uma proposta de como citar o software CorText Manager
-apropriadamente em trabalhos academicos contribuindo para aumentar o
-reconhecimento tanto do software, quanto dos pesquisadores, desenvolvedores e
-demais colaboradores envolvidos na construcao e financiamento desta plataforma
-que tem sido constantemente desenvolvida ao longo de 10 anos. ...
+Tomando estes principios como ponto de partida e as propostas de formatos de
+arquivos e ferramentas propostas neste debate este documento resume uma
+proposta de como citar o software CorText Manager apropriadamente em trabalhos
+academicos, buscando assim incentivar credito e atribuicao as instituicoes,
+pesquisadores, engenheiros e demais atores envolvidos na construcao e
+financiamento da plataforma CorText Manager.
+
+\section{Cite CorText Manager with Bib\LaTeX} \label{example-biblatex}
+
+Abaixo segue um exemplo de como o CorText Manager ao ser citado\cite{cortext_manager_v2} é visualizado nas referencias
+bibliograficas, este exemplo usa como base os
+dados descritos no arquivo {\em biblatex-software.bib} e é modo recomendavel ao citar CorText Manager.
+
+\printbibliography[type=software,title={\small References (example)}]
+
+\subsection{Bib\LaTeX \ file}
+
+Below you see the content of the Bib\LaTeX \ file
+\href{https://github.com/cortext/how-to-cite-cortext/blob/main/biblatex-software.bib}{\em biblatex-software.bib}
+with the Bib\LaTeX \ Software extension\cite{softwareheritageorg_citing_2020}.
+
+\VerbatimInput[fontsize=\small]{biblatex-software.bib}
+
+When using this file you can see the result of reference format citing CorText
+Manager \cite{cortext_manager_v2} on the references section of this document.
+
+\section{Cite CorText Manager with Bib\TeX} \label{example-bibtex}
+
+\printbibliography[type=misc,keyword=cortext,title={\small References (example)}]
+
+\subsection{Bib\TeX \ file}
+
+Below you see the content of the Bib\TeX \ file
+\href{https://github.com/cortext/how-to-cite-cortext/blob/main/bibtex.bib}{\em bibtex.bib},
+this file is created from
+\href{https://github.com/cortext/how-to-cite-cortext/blob/main/CITATION.cff}{\em CITATION.cff}
+converted by {\em cffconvert} tool.
+
+\VerbatimInput[fontsize=\small]{bibtex.bib}
+
+When using this file you can see the result of reference format citing CorText
+Manager \cite{cortext_manager_v2_bibtex} on the references section of this document.
 
 \section{CorText Manager metadata}
 
-The CorText Manager metadata for academic citation is being maintaned in two files:
+The CorText Manager metadata for academic citation is being maintained mainly in two files:
 
 \begin{description}
-  \item[CITATION.cff] Citation File Format (CFF) fila with data about the software CorText Manager,
-    this file is the main file to concentrate CorText Manager metadata.
-  \item[biblatex-software.bib] BibLatex file with extension for Software for CorText Manager,
-    this file is a transcription of informations from the {\em CITATION.cff} file.
+  \item[CITATION.cff] Citation File Format (CFF) file with metadata about the software CorText Manager,
+    this file is the main file to centralize all metadata required for citation.
+  \item[biblatex-software.bib] BibLaTeX file with Software extension,
+    this file is a transcription of all informations from the {\em CITATION.cff} file.
 \end{description}
 
-Besides those two main files there are also some others files important to be described as follows:
+The example on Section \ref{example-biblatex} was generated by using the file
+{\em biblatex-software.bib}, besides those two files there are some other
+files that must be described:
 
 \begin{description}
-  \item[codemeta.json] CodeMeta file generated from `CITATION.cff` by the {\em cffconvert} tool,
-    this file is machine-readable file in a interchangeable format.
-  \item[bibtex.bib] BibTex file generated from `CITATION.cff` by the {\em cffconvert} tool,
-    this file is useful for whom is writing paper with LaTeX and is using BibTex as referencing
+  \item[codemeta.json] CodeMeta file generated from {\em CITATION.cff} by the
+    {\em cffconvert} tool, this file is a machine-readable file in a
+    interchangeable JSON-LD format.
+  \item[bibtex.bib] BibTeX file generated from {\em CITATION.cff} by the {\em
+    cffconvert} tool, this file is useful for whom is using BibTeX as referencing
     system.
 \end{description}
 
-\section{Citing CorText with biblatex-software}
-
-Below you see the content of the {\em biblatex-software.bib}\footnote{Available
-at \url{https://github.com/cortext/how-to-cite-cortext}} in BibLaTeX format
-with software style extension\cite{softwareheritageorg_citing_2020}.
-
-\VerbatimInput[fontsize=\small]{biblatex-software.bib}
+The example on Section \ref{example-bibtex} was generated by using the {\em
+bibtex.bib} file, instructions on how to update those files can be found at
+\href{https://github.com/cortext/how-to-cite-cortext/blob/main/AUTHORS.md}{\em AUTHORS.md}
+document.
 
 %% * criar um espaco no site www.cortext.net e documentar como citar, com links e referencias, exemplos, etc
 %% * OK criar arquivo `CITATION.cff` com metadados do CorText, autores, abstract, url, etc
@@ -117,26 +142,11 @@ with software style extension\cite{softwareheritageorg_citing_2020}.
 %% * OK melhorar o bibtex.bib geradi pelo cffconverter pois eh mto pobre n preserva quase nada do CITATION.cff
 %%   * nao vale a pena melhorar, o core do cffconverter gera um simples bibtex e eh isso, manter so como exemplo mas preferir o biblatex-software
 %% * OK olhar e escrever bibtex CorText para o bibtex-software desenvolvido pelo pessoal do software heritage, criar arquivo `biblatex-software.bib`
-%% * criar RESEARCHERS.md (ou USERS.md) e DEVELOPERS.md para documentar instrucoes para quem precisa citar CorText e para os mantenedores do CorText
-%% * HAL nao documenta nada sobre aceitar software metadata, a descricao dos campos ao depositor n mostra nada onde software se encaixe
+%% * OK criar RESEARCHERS.md (ou USERS.md) e DEVELOPERS.md para documentar instrucoes para quem precisa citar CorText e para os mantenedores do CorText
+%% * OK HAL nao documenta nada sobre aceitar software metadata, a descricao dos campos ao depositor n mostra nada onde software se encaixe
 %%   * creio que a melhor forma de arquivar os metadados do software eh atraves de um software paper, ele pode ser publicado no HAL
 %% * OK criar um persistent ID para o CorText, opcoes sao DOI com um software paper ou um SWHID (vou tentar o SWHID primeiro)
 %%   * usar URL do gitlab ou github para este repositorio, exemplo: https://github.com/cortext/how-to-cite-cortext
-
-When using this file you can see the result of reference format citing CorText
-Manager \cite{cortext_manager_v2} on the references section of this document.
-
-\section{Citing CorText with bibtex}
-
-Below you see the content of the {\em bibtex.bib}\footnote{Available
-at \url{https://github.com/cortext/how-to-cite-cortext}} in BibTeX format,
-this file is created from {\em CITATION.cff}\footnote{Available
-at \url{https://github.com/cortext/how-to-cite-cortext}} converted by the {\em cffconvert} tool.
-
-\VerbatimInput[fontsize=\small]{bibtex.bib}
-
-When using this file you can see the result of reference format citing CorText
-Manager \cite{cortext_manager_v2_bibtex} on the references section of this document.
 
 \printbibliography
 
