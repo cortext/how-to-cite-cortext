@@ -19,7 +19,7 @@ codemeta.json:
 
 bibtex.bib:
 	cffconvert -f bibtex -o $@
-	sed -i 's/YourReferenceHere/cortext_manager_v2_bibtex/' $@
+	sed -i 's/YourReferenceHere,/cortext_manager_v2_bibtex,\nkeywords = {cortext},/' $@
 	sed -i 's/^\(\w\)/  \1/' $@
 	fmt -s $@ > $@.fmt
 	mv -f $@.fmt $@
