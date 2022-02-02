@@ -38,9 +38,18 @@
       },
       "familyName": "Medina",
       "givenName": "Luis-Daniel"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "Sciences-Po Paris"
+      },
+      "familyName": "Cointet",
+      "givenName": "Jean-Philippe"
     }
   ],
-  "codeRepository": "https://hal.archives-ouvertes.fr/hal-02090402",
+  "codeRepository": "https://github.com/cortext/how-to-cite-cortext",
   "datePublished": "2020-12-01",
   "description": "Cortext Manager is a data analysis platform for citizens and researchers in the social sciences and humanities.",
   "keywords": [
