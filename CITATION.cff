@@ -38,6 +38,36 @@ authors:
     family-names: Cointet
     email: jeanphilippe.cointet@sciencespo.fr
     affiliation: Sciences-Po Paris
+  - given-names: Cristian
+    family-names: Martinez
+    email: martinec@cogniteva.fr
+    affiliation: Cogniteva
+  - given-names: Alexandre
+    family-names: Hannud Abdo
+    email: abdo@member.fsf.org
+    affiliation: LISIS
+  - given-names: Morton
+    family-names: Fox
+    email: github@qslw.com
+  - given-names: Constance
+    family-names: Quatrebarbes
+    name-particle: de
+    email: 4barbes@gmail.com
+  - given-names: Tam-Kien
+    family-names: Duong
+    email: tk@deveha.com
+  - given-names: Diego-Fernando
+    family-names: Gómez Peña
+    email: gomezdiego1998@gmail.com
+    affiliation: LISIS
+  - given-names: Tatiana
+    family-names: Andrea Sánchez Castaño
+    email: tatianasanchez03@gmail.com
+    affiliation: LISIS
+  - given-names: Joenio
+    family-names:  Marques da Costa
+    email: joenio.marquesdacosta@u-pem.fr
+    affiliation: LISIS
 
 # The identifiers of the software or dataset
 identifiers:
