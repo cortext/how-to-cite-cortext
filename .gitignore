@@ -23,3 +23,9 @@
 *.swp
 *.bcf
 *.run.xml
+biblatex-software/
+english-software.lbx
+french-software.lbx
+software-biblatex.sty
+software.bbx
+software.dbx
