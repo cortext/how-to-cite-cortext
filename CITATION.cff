@@ -22,33 +22,20 @@ authors:
     email: breucker@ifris.org
     affiliation: INRAE
     orcid: 'https://orcid.org/0000-0002-0642-2031'
-  - given-names: Juan-Pablo
-    family-names: Ospina Delgado
-    email: gnu.pablo@gmail.com
-    affiliation: LISIS
-  - given-names: Guillaume
-    family-names: Orsal
-    email: guillaume@orsal.net
-    affiliation: LISIS
-  - given-names: Luis-Daniel
-    family-names: Medina
-    email: luisdaniel.ld24@gmail.com
-    affiliation: LISIS
   - given-names: Jean-Philippe
     family-names: Cointet
     email: jeanphilippe.cointet@sciencespo.fr
-    affiliation: Sciences-Po Paris
-  - given-names: Cristian
-    family-names: Martinez
-    email: martinec@cogniteva.fr
-    affiliation: Cogniteva
+    affiliation: Sciences Po Paris
+    orcid: 'https://orcid.org/0000-0002-3172-3960'
   - given-names: Alexandre
     family-names: Hannud Abdo
     email: abdo@member.fsf.org
     affiliation: LISIS
-  - given-names: Morton
-    family-names: Fox
-    email: github@qslw.com
+    orcid: 'https://orcid.org/0000-0002-4849-4631'
+  - given-names: Guillaume
+    family-names: Orsal
+    email: guillaume@orsal.net
+    affiliation: LISIS
   - given-names: Constance
     family-names: Quatrebarbes
     name-particle: de
@@ -56,18 +43,37 @@ authors:
   - given-names: Tam-Kien
     family-names: Duong
     email: tk@deveha.com
-  - given-names: Diego-Fernando
+  - given-names: Cristian
+    family-names: Martinez
+    email: martinec@cogniteva.fr
+    affiliation: Cogniteva
+  - given-names: Lionel
+    family-names: Villard
+    email: lionel.villard@esiee.fr
+    affiliation: ESIEE paris
+    orcid: 'https://orcid.org/0000-0001-8274-2718'
+  - given-names: Juan Pablo
+    family-names: Ospina Delgado
+    email: gnu.pablo@gmail.com
+    affiliation: LISIS
+  - given-names: Luis Daniel
+    family-names: Medina Zuluaga
+    email: luisdaniel.medina@esiee.fr
+    affiliation: LISIS
+    orcid: 'https://orcid.org/0000-0003-4973-5772'
+  - given-names: Diego Fernando
     family-names: Gómez Peña
-    email: gomezdiego1998@gmail.com
+    email: diego-fernando.gomezpena@u-pem.fr
     affiliation: LISIS
   - given-names: Tatiana
     family-names: Andrea Sánchez Castaño
-    email: tatianasanchez03@gmail.com
+    email: tatiana.sanchezcastano@u-pem.fr
     affiliation: LISIS
   - given-names: Joenio
-    family-names:  Marques da Costa
+    family-names: Marques da Costa
     email: joenio.marquesdacosta@u-pem.fr
     affiliation: LISIS
+    orcid: 'https://orcid.org/0000-0002-5574-1370'
 
 # The identifiers of the software or dataset
 identifiers:
@@ -93,25 +99,25 @@ keywords:
 # The contact person, group, company, etc. for the software or dataset
 contact:
   - address: "2 Allée Jean Renoir"
-    alias: LISIS
     city: Noisy-le-Grand
     country: FR
-    email: lynda.silva@univ-eiffel.fr
-    fax: "+33.(0)1.60.95.72.38"
-    location: "Camus Building, CorText room"
-    name: "Laboratoire Interdisciplinaire Sciences Innovations Sociétés"
-    post-code: 77454
+    email: contact@cortext.fr
+    location: "Camus Building, first floor, N 101"
+    name: "CorTexT Platform, Laboratoire Interdisciplinaire Sciences Innovations Sociétés"
+    post-code: 93160
     region: "Marne-la-Vallée"
-    tel: "+33.(0)1.60.95.71.89"
-    website: "http://umr-lisis.fr"
+    tel: "+33.(0)1.45.92.67.34"
+    website: "http://www.cortext.net/contact"
   - given-names: Marc
     family-names: Barbier
     email: marc.barbier@inrae.fr
     affiliation: INRAE
+    orcid: 'https://orcid.org/0000-0002-9868-7546'
   - given-names: Lionel
     family-names: Villard
     email: lionel.villard@esiee.fr
-    affiliation: ESIEE
+    affiliation: ESIEE Paris
+    orcid: 'https://orcid.org/0000-0001-8274-2718'
 
 # The date the software or data set has been released
 date-released: "2020-12-01"
