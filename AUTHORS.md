@@ -21,7 +21,7 @@ make install
 To build the `how-to-cite-cortext.pdf`, on Debian-based, install:
 
 ```sh
-sudo apt install texlive-bibtex-extra
+sudo apt install texlive-bibtex-extra biber
 ```
 
 ## Update CITATION.cff
@@ -63,6 +63,15 @@ The `bibtex.bib` file is generated from `CITATION.cff` using the
 
 ```sh
 make bibtex.bib
+```
+
+## Update apalike.apa
+
+The `apalike.apa` file is generated from `CITATION.cff` using the
+[cffconvert][cff-converter] tool.
+
+```sh
+make apalike.apa
 ```
 
 [schema-guide]: https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md
