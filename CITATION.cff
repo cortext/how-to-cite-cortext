@@ -92,9 +92,12 @@ abstract: >-
 
 # Keywords that describe the work
 keywords:
-  - corpus database
-  - statistical analysis
-  - terms extraction
+  - natural language processing
+  - social network analysis
+  - geospatial analysis
+  - descriptive statistics
+  - scientometrics
+  - biliometrics
 
 # The contact person, group, company, etc. for the software or dataset
 contact:
