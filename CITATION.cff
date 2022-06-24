@@ -10,7 +10,7 @@ message: >-
   metadata from this file.
 
 # The name of the software or dataset
-title: CorText Manager
+title: CorTexT Manager
 
 # The type of the work that is being described by this CITATION.cff file
 type: software
@@ -79,14 +79,14 @@ authors:
 identifiers:
   - type: url
     value: 'https://managerv2.cortext.net'
-    description: The homepage Cortext Manager v2 web platform
+    description: The homepage CorTexT Manager v2 web platform
 
 # The URL of a landing page/website for the software or dataset
 url: 'https://www.cortext.net'
 
 # A description of the software or dataset
 abstract: >-
-  Cortext Manager is a data analysis platform for
+  CorTexT Manager is a data analysis platform for
   citizens and researchers in the social sciences and
   humanities.
 
