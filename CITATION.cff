@@ -143,7 +143,7 @@ contact:
     orcid: 'https://orcid.org/0000-0001-8274-2718'
 
 # The date the software or data set has been released
-date-released: "2020-12-01"
+date-released: "2022-06-24"
 
 # The URL of the software or dataset in a repository/archive
 repository: "https://github.com/cortext/how-to-cite-cortext"
