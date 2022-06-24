@@ -13,7 +13,7 @@ Manager on academic works.
 
 ## Update CITATION.cff
 
-All CorText Manager metadata is maintaned on the `CITATION.cff` file.
+All CorText Manager metadata is maintained on the `CITATION.cff` file.
 
 To update the format or data about how to cite CorText Manager edit the
 `CITATION.cff` accordingly
