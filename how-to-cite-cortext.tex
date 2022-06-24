@@ -4,16 +4,24 @@
 \usepackage{fancyvrb}
 \usepackage[backend=biber,datamodel=software]{biblatex}
 \usepackage{software-biblatex}
+\usepackage{minted}
+\usemintedstyle{algol}
 
 \title{
-  How To Cite CorText Manager
+  How To Cite CorTexT Manager
 }
 
 \author{
-  Joenio Marques da Costa\\
+  Marques da Costa, Joenio\\
   Université Gustave Eiffel
   \and
   Barbier, Marc\\
+  LISIS - Laboratoire Interdisciplinaire Sciences, Innovations, Sociétés
+  \and
+  Villard, Lionel\\
+  ESIEE Paris
+  \and
+  Daniel, Luis\\
   LISIS - Laboratoire Interdisciplinaire Sciences, Innovations, Sociétés
 }
 
@@ -38,23 +46,21 @@
 Software and Platform availability play a fundamental role in scientific
 activities and front of knowledge development. It concerns many disciplines,
 interdisciplinary research and open-sciences. Software, services, datasets and
-IT assets are more and more assembled in research infrastructures. There is
-need to up-grade the impact and radical empowerment of those application and
-infrastructure on science dynamics, and thus to recognize Software and
-Infrastructure for research as a first class product.  This means to generate
-academic credit and encourage researchers, engineers and their organizations to
-be more involved in the support and recognition of software and platforms for
-science \cite{alliez_attributing_2020}.
+IT assets are more and more being assembled to give birth to research
+infrastructures.  It has become necessary to increase the impact and radical
+empowerment of those applications and infrastructures on science dynamics, and
+thus to recognize Software and Infrastructure for research as a first class
+product. Researchers, engineers and their organizations must be encouraged by
+academic credit, so that the value of their involvement in support and
+development of software and platforms for science is acknowledged
+\cite{alliez_attributing_2020}.
 
-The European policy of research infrastructure plays a key-role and tend to
-accelerate this development and also foster the professionalization  of
-infrastructure technology and management. But the engagement of scientists and
-engineers in software and platform archictecture needs to be recongnized as a
-key contribution to on-going and future dynamics of Science and Innovation in
+The European policy of research infrastructure plays a key role in this context. It intends to stimulate and foster the professionalization of infrastructure technology and management, in the interest of ensuring the sustainability of software and infrastructures on the service of science. On that account, the engagement of scientists and engineers in software and platform archictecture needs to be recongnized as a
+key contribution to ongoing and future dynamics of Science and Innovation in
 Societies.
 
-One key issue in this dynamic is the function of software as key assets for new
-front of knowledge. This point has been and -still is- a matter of debates,
+One key issue in this topic is the role of software as key assets for new
+front of knowledge. This point has been and -still is- a matter of debate,
 such as how to apply the FAIR (Findable, Accessible, Interoperable and
 Reusable) principles to software \cite{noauthor_fair_nodate}, and proposals
 such as the Citation File Format (CFF) \cite{chue_hong_software_2019}, a YAML
@@ -63,7 +69,7 @@ format for describing software metadata, or CodeMeta
 repositories interoperability.
 
 Many of these proposals are built around debates centered on the software
-citation principles \cite{smith_software_2016}, summarized below:
+citation principles \cite{smith_software_2016}, which are summarized below:
 
 \begin{description}
   \item[Importance:] Software should be considered a legitimate and citable product of research.
@@ -74,33 +80,33 @@ citation principles \cite{smith_software_2016}, summarized below:
   \item[Specificity:] Software citations should facilitate identification of the specific version of software that was used.
 \end{description}
 
-Based on these principles and taking some of the more recent proposals on how
+Based on these principles and considering some of the more recent ideas on how
 to cite software, here follows a proposal of how the CorText Manager as a on
 line application or software should be cited in academic papers.
 
 \section{Cite CorText Manager with Bib\LaTeX} \label{example-biblatex}
 
-Within the general issue expose in section 1, this note intend to normalize the
-format of how the CorText Manager should be cited when it is accounted as a
-software being developed and delivered as a online application for scientific
-work by others.
+Within the general issue exposed in section 1, this note intends to specify the
+manner in which CorText Manager should be cited when it is used as a software
+that is developed and delivered by the CorTexT team as an online application
+for scientific work.
 
 When cited the format of citation is to be clearly defined as shown hereunder
 \cite{cortext_manager_v2} is displayed in the bibliographic references. This
 example uses the data described in the file {\em biblatex-software.bib}.  This
 format is the one recommended to cite CorText Manager in an appropriate way.
 
-\printbibliography[type=software,title={\small References to Software development (example)}]
+\printbibliography[type=software,title={\small References to Software (example)}]
 
 \subsection{Bib\LaTeX \ file}
 
-Below you see the content of the Bib\LaTeX \ file
+Below is the content of the Bib\LaTeX \ file
 \href{https://github.com/cortext/how-to-cite-cortext/blob/main/biblatex-software.bib}{\em biblatex-software.bib}
 with the Bib\LaTeX \ Software extension\cite{softwareheritageorg_citing_2020}.
 
-\VerbatimInput[fontsize=\small]{biblatex-software.bib}
+\inputminted[fontsize=\small, breaklines=true, breaksymbolleft=]{bib}{biblatex-software.bib}
 
-When using this file you can see the result of reference format citing CorText
+When using this file it is possible to see the result of reference format citing CorText
 Manager \cite{cortext_manager_v2} on the references section of this document.
 
 \section{Cite CorText Manager with Bib\TeX} \label{example-bibtex}
@@ -109,45 +115,70 @@ Manager \cite{cortext_manager_v2} on the references section of this document.
 
 \subsection{Bib\TeX \ file}
 
-Below you see the content of the Bib\TeX \ file
+Below is the content of the Bib\TeX \ file
 \href{https://github.com/cortext/how-to-cite-cortext/blob/main/bibtex.bib}{\em bibtex.bib},
 this file is created from
 \href{https://github.com/cortext/how-to-cite-cortext/blob/main/CITATION.cff}{\em CITATION.cff}
 converted by {\em cffconvert} tool.
 
-\VerbatimInput[fontsize=\small]{bibtex.bib}
+\inputminted[fontsize=\small, breaklines=true, breaksymbolleft=]{bib}{bibtex.bib}
 
-When using this file you can see the result of reference format citing CorText
-Manager \cite{cortext_manager_v2_bibtex} on the references section of this document.
+When using this file it is possible to see the result of reference format citing CorText
+Manager \cite{cortext_manager_v2_bibtex} on the references section at the end of this document.
+
+\subsection{APA file}
+
+Below is the content of the APA file
+\href{https://github.com/cortext/how-to-cite-cortext/blob/main/apalike.apa}{\em apalike.apa},
+this file is created from
+\href{https://github.com/cortext/how-to-cite-cortext/blob/main/CITATION.cff}{\em CITATION.cff}
+converted by {\em cffconvert} tool.
+
+\inputminted[fontsize=\small, breaklines=true, breaksymbolleft=]{text}{apalike.apa}
 
 \section{CorText Manager metadata}
 
-The CorText Manager metadata for academic citation is being maintained mainly in two files:
+The CorText Manager metadata for academic citation is being maintained mainly in the
+{\em CITATION.cff} file.
 
 \begin{description}
   \item[CITATION.cff] Citation File Format (CFF) file with metadata about the software CorText Manager,
     this file is the main file to centralize all metadata required for citation.
-  \item[biblatex-software.bib] BibLaTeX file with Software extension,
-    this file is a transcription of all informations from the {\em CITATION.cff} file.
 \end{description}
 
-The example on Section \ref{example-biblatex} was generated by using the file
-{\em biblatex-software.bib}, besides those two files there are some other
-files that must be described:
+The {\em CITATION.cff} file can be read by the {\em cffconvert} tool and
+translated in some other formats, like {\em codemeta.json}, {\em bibtex.bib}
+and {\em apalike.apa}.
 
 \begin{description}
   \item[codemeta.json] CodeMeta file generated from {\em CITATION.cff} by the
     {\em cffconvert} tool, this file is a machine-readable file in a
     interchangeable JSON-LD format.
   \item[bibtex.bib] BibTeX file generated from {\em CITATION.cff} by the {\em
-    cffconvert} tool, this file is useful for whom is using BibTeX as referencing
+    cffconvert} tool, this file is useful for whom is using Bib\TeX \ as referencing
     system.
+  \item[apalike.apa] APA file generated from {\em CITATION.cff} by the {\em
+    cffconvert} tool, this file is a plaintext format.
 \end{description}
 
-The example on Section \ref{example-bibtex} was generated by using the {\em
-bibtex.bib} file, instructions on how to update those files can be found at
-\href{https://github.com/cortext/how-to-cite-cortext/blob/main/AUTHORS.md}{\em AUTHORS.md}
-document.
+%The example on Section \ref{example-bibtex} was generated by using the {\em
+%bibtex.bib} file, instructions on how to update those files can be found at
+%\href{https://github.com/cortext/how-to-cite-cortext/blob/main/AUTHORS.md}{\em AUTHORS.md}
+%document.
+
+Besides those files there also the {\em biblatex-software.bib}
+
+%The example on Section \ref{example-biblatex} was generated by using the file
+%{\em biblatex-software.bib}, besides those two files there are some other
+%files that must be described:
+
+\begin{description}
+  \item[biblatex-software.bib] Bib\LaTeX \ file with Software extension,
+    this file is a transcription of all informations from the {\em CITATION.cff} file.
+\end{description}
+
+The {\em biblatex-software.bib} is the preferred way for citing CorTexT Manager
+as it offers much more rich metadata then the {\em bibtex.bib}
 
 \printbibliography
 
