@@ -26,6 +26,9 @@ bibtex.bib:
 	fmt -s $@ > $@.fmt
 	mv -f $@.fmt $@
 
+apalike.apa:
+	cffconvert -f apalike -o $@
+
 install:
 	curl https://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-software.zip -s -L -o biblatex-software.zip
 	unzip -o -q biblatex-software.zip
