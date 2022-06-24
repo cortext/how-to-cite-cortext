@@ -1,12 +1,12 @@
-# Authors: How to cite CorText Manager
+# Authors: How to cite CorTexT Manager
 
-This document is aimed to support CorText Manager developers, collaborators and
-authors in general on how to update the instructions on how to cite CorText
+This document is aimed to support CorTexT Manager developers, collaborators and
+authors in general on how to update the instructions on how to cite CorTexT
 Manager on academic works.
 
 ## Development dependencies
 
-* make
+* make, curl, unzip
 * [cffconvert][cff-converter]
 * [biber][biber]
 * [biblatex-software][biblatex-software]
@@ -15,13 +15,20 @@ Manager on academic works.
 
 ```sh
 python3 -m pip install --user cffconvert
+make install
+```
+
+To build the `how-to-cite-cortext.pdf`, on Debian-based, install:
+
+```sh
+sudo apt install texlive-bibtex-extra
 ```
 
 ## Update CITATION.cff
 
-All CorText Manager metadata is maintained on the `CITATION.cff` file.
+All CorTexT Manager metadata is maintained on the `CITATION.cff` file.
 
-To update the format or data about how to cite CorText Manager edit the
+To update the format or data about how to cite CorTexT Manager edit the
 `CITATION.cff` accordingly
 [Citation File Format (CFF) schema guide][schema-guide].
 
@@ -31,7 +38,7 @@ Besides the `CITATION.cff` this file also must be updated manually, it is
 recommended that all informations on `CITATION.cff` must be present on
 `biblatex-software.bib` as well.
 
-To update the format or data about how to cite CorText Manager edit the
+To update the format or data about how to cite CorTexT Manager edit the
 `biblatex-software.bib` accordingly
 [BibLatex style extension for Software (biblatex-software) docs][biblatex-software].
 
