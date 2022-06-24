@@ -82,6 +82,9 @@ authors:
 # The identifiers of the software or dataset
 identifiers:
   - type: url
+    value: 'https://docs.cortext.net'
+    description: The documentation CorTexT Manager v2 web platform
+  - type: url
     value: 'https://managerv2.cortext.net'
     description: The homepage CorTexT Manager v2 web platform
 
@@ -153,4 +156,4 @@ version: "v2"
 
 # The URL of the license text under which the software or dataset is licensed
 # (only for non-standard licenses not included in the SPDX License List)
-license-url: "https://auth.cortext.net/conditions-generales-utilisation"
+license-url: "https://auth.cortext.net/general-terms-of-use"
