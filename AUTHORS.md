@@ -11,6 +11,12 @@ Manager on academic works.
 * [biber][biber]
 * [biblatex-software][biblatex-software]
 
+## Install dependencies
+
+```sh
+python3 -m pip install --user cffconvert
+```
+
 ## Update CITATION.cff
 
 All CorText Manager metadata is maintained on the `CITATION.cff` file.
