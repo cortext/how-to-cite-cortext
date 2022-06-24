@@ -50,7 +50,7 @@ authors:
   - given-names: Lionel
     family-names: Villard
     email: lionel.villard@esiee.fr
-    affiliation: ESIEE paris
+    affiliation: ESIEE Paris
     orcid: 'https://orcid.org/0000-0001-8274-2718'
   - given-names: Juan Pablo
     family-names: Ospina Delgado
@@ -74,6 +74,10 @@ authors:
     email: joenio.marquesdacosta@u-pem.fr
     affiliation: LISIS
     orcid: 'https://orcid.org/0000-0002-5574-1370'
+  - given-names: Hajar
+    family-names: Laglil
+    email: hajar.laglil@edu.univ-eiffel.fr
+    affiliation: LISIS
 
 # The identifiers of the software or dataset
 identifiers:
