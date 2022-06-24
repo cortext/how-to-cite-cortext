@@ -1,10 +1,10 @@
 how-to-cite-cortext.pdf:
 
 %.pdf: %.tex
-	pdflatex $<
+	pdflatex -shell-escape $<
 	- biber $*
-	pdflatex $<
-	pdflatex $<
+	pdflatex -shell-escape $<
+	pdflatex -shell-escape $<
 
 clean:
 	$(RM)  *.log *.aux \
