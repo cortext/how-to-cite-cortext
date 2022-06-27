@@ -7,14 +7,19 @@ how-to-cite-cortext.pdf:
 	pdflatex -shell-escape $<
 
 clean:
-	$(RM)  *.log *.aux \
+	$(RM) *.log *.aux \
 	*.cfg *.glo *.idx *.toc \
 	*.ilg *.ind *.out *.lof \
 	*.lot *.bbl *.blg *.gls *.cut *.hd \
 	*.dvi *.ps *.thm *.tgz *.zip *.rpi \
 	*.bcn *.run.xml *.bcf \
-	software.dbx software.bbx *-software.lbx software-biblatex.sty
-	$(RM) -r biblatex-software
+	$(RM) -r _minted-*
+
+convert: rm codemeta.json bibtex.bib apalike.apa
+
+rm:
+	$(RM) codemeta.json bibtex.bib apalike.apa
+	$(RM) how-to-cite-cortext.pdf
 
 codemeta.json:
 	cffconvert -f codemeta -o $@
@@ -31,3 +36,7 @@ install:
 	curl https://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-software.zip -s -L -o biblatex-software.zip
 	unzip -o -q biblatex-software.zip
 	cp biblatex-software/software.dbx biblatex-software/software.bbx biblatex-software/*-software.lbx biblatex-software/software-biblatex.sty .
+
+uninstall:
+	$(RM) biblatex-software.zip software.dbx software.bbx *-software.lbx software-biblatex.sty
+	$(RM) -r biblatex-software
