@@ -13,51 +13,17 @@
       "givenName": "Philippe"
     },
     {
+      "@id": "https://orcid.org/0000-0002-3172-3960",
       "@type": "Person",
       "affiliation": {
         "@type": "Organization",
-        "legalName": "LISIS"
-      },
-      "familyName": "Ospina Delgado",
-      "givenName": "Juan-Pablo"
-    },
-    {
-      "@type": "Person",
-      "affiliation": {
-        "@type": "Organization",
-        "legalName": "LISIS"
-      },
-      "familyName": "Orsal",
-      "givenName": "Guillaume"
-    },
-    {
-      "@type": "Person",
-      "affiliation": {
-        "@type": "Organization",
-        "legalName": "LISIS"
-      },
-      "familyName": "Medina",
-      "givenName": "Luis-Daniel"
-    },
-    {
-      "@type": "Person",
-      "affiliation": {
-        "@type": "Organization",
-        "legalName": "Sciences-Po Paris"
+        "legalName": "Sciences Po Paris"
       },
       "familyName": "Cointet",
       "givenName": "Jean-Philippe"
     },
     {
-      "@type": "Person",
-      "affiliation": {
-        "@type": "Organization",
-        "legalName": "Cogniteva"
-      },
-      "familyName": "Martinez",
-      "givenName": "Cristian"
-    },
-    {
+      "@id": "https://orcid.org/0000-0002-4849-4631",
       "@type": "Person",
       "affiliation": {
         "@type": "Organization",
@@ -68,8 +34,12 @@
     },
     {
       "@type": "Person",
-      "familyName": "Fox",
-      "givenName": "Morton"
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "LISIS"
+      },
+      "familyName": "Orsal",
+      "givenName": "Guillaume"
     },
     {
       "@type": "Person",
@@ -85,10 +55,58 @@
       "@type": "Person",
       "affiliation": {
         "@type": "Organization",
+        "legalName": "Cogniteva"
+      },
+      "familyName": "Martinez",
+      "givenName": "Cristian"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9868-7546",
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "INRAE"
+      },
+      "familyName": "Barbier",
+      "givenName": "Marc"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8274-2718",
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "ESIEE Paris"
+      },
+      "familyName": "Villard",
+      "givenName": "Lionel"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "LISIS"
+      },
+      "familyName": "Ospina Delgado",
+      "givenName": "Juan Pablo"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4973-5772",
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "LISIS"
+      },
+      "familyName": "Medina Zuluaga",
+      "givenName": "Luis Daniel"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
         "legalName": "LISIS"
       },
       "familyName": "Gómez Peña",
-      "givenName": "Diego-Fernando"
+      "givenName": "Diego Fernando"
     },
     {
       "@type": "Person",
@@ -100,6 +118,7 @@
       "givenName": "Tatiana"
     },
     {
+      "@id": "https://orcid.org/0000-0002-5574-1370",
       "@type": "Person",
       "affiliation": {
         "@type": "Organization",
@@ -107,17 +126,29 @@
       },
       "familyName": "Marques da Costa",
       "givenName": "Joenio"
+    },
+    {
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "LISIS"
+      },
+      "familyName": "Laglil",
+      "givenName": "Hajar"
     }
   ],
   "codeRepository": "https://github.com/cortext/how-to-cite-cortext",
-  "datePublished": "2020-12-01",
-  "description": "Cortext Manager is a data analysis platform for citizens and researchers in the social sciences and humanities.",
+  "datePublished": "2022-06-24",
+  "description": "Over the last decades, whether documents, databases or online contents, including social media, the digital traces associated with human activities in society have experienced a sustained growth in volume and a wide diversification. They represent a renewed pl8ayground for social sciences and humanities, shifting the fields studied and renewing research questions and methods. CorTexT Manager started at this crossroads, within a research infrastructure aiming in particular at identifying and gathering methods in order to assist and structure the approaches of the researchers that use it. The main goal of CorTexT Manager is that a social scientist, or any other user, could come with a research question and leave with the fruits of a computational method suited to their question. Cortext Manager facilitates the analysis of complex heterogeneous networks, crossing social networks with semantic networks. It also offers capabilities to identify place names mentioned in documents and to analyze the associated dynamics across the geographical space, as well as heterogeneous topic modeling methods. While continuing to move forward on the scientific and technical fronts, CorTexT Manager’s functional design has been driven by a strong principle that still differentiates it: to offer users the ability to combine different methods and analyses without leaving the application.",
   "keywords": [
-    "corpus database",
-    "statistical analysis",
-    "terms extraction"
+    "natural language processing",
+    "social network analysis",
+    "geospatial analysis",
+    "descriptive statistics",
+    "scientometrics",
+    "biliometrics"
   ],
-  "name": "CorText Manager",
-  "url": "https://managerv2.cortext.net",
+  "name": "CorTexT Manager",
+  "url": "https://docs.cortext.net",
   "version": "v2"
 }
