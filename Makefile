@@ -1,4 +1,8 @@
-how-to-cite-cortext.pdf:
+how-to-cite-cortext.pdf: cortext.bib
+
+cortext.bib: bibtex.bib biblatex-software.bib
+	sed 's/keywords = {.\+},/keywords = {cortext-bibtex},/' bibtex.bib > $@
+	sed 's/keywords = {.\+},/keywords = {cortext-biblatex},/' biblatex-software.bib >> $@
 
 %.pdf: %.tex
 	pdflatex -shell-escape $<
@@ -12,7 +16,7 @@ clean:
 	*.ilg *.ind *.out *.lof \
 	*.lot *.bbl *.blg *.gls *.cut *.hd \
 	*.dvi *.ps *.thm *.tgz *.zip *.rpi \
-	*.bcn *.run.xml *.bcf \
+	*.bcn *.run.xml *.bcf cortext.bib \
 	$(RM) -r _minted-*
 
 convert: rm codemeta.json bibtex.bib apalike.apa
@@ -26,7 +30,7 @@ codemeta.json:
 
 bibtex.bib: codemeta.json
 	cffconvert -f bibtex -o $@.tmp
-	sed -i 's/YourReferenceHere,/cortext_manager_v2_bibtex,\nkeywords = {$$KEYWORDS},/' $@.tmp
+	sed -i 's/@misc{YourReferenceHere,/@software{cortext_manager_v2_bibtex,\nkeywords = {$$KEYWORDS},/' $@.tmp
 	KEYWORDS=$$(cat codemeta.json | jq -c ".keywords" | tr -d '"[]' | sed 's/,/, /g') envsubst < $@.tmp > $@
 	sed -i 's/^\(\w\)/  \1/' $@
 	$(RM) $@.tmp
