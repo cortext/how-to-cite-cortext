@@ -61,26 +61,6 @@
       "givenName": "Cristian"
     },
     {
-      "@id": "https://orcid.org/0000-0002-9868-7546",
-      "@type": "Person",
-      "affiliation": {
-        "@type": "Organization",
-        "legalName": "INRAE"
-      },
-      "familyName": "Barbier",
-      "givenName": "Marc"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8274-2718",
-      "@type": "Person",
-      "affiliation": {
-        "@type": "Organization",
-        "legalName": "ESIEE Paris"
-      },
-      "familyName": "Villard",
-      "givenName": "Lionel"
-    },
-    {
       "@type": "Person",
       "affiliation": {
         "@type": "Organization",
@@ -114,8 +94,8 @@
         "@type": "Organization",
         "legalName": "LISIS"
       },
-      "familyName": "Andrea Sánchez Castaño",
-      "givenName": "Tatiana"
+      "familyName": "Sánchez Castaño",
+      "givenName": "Tatiana Andrea"
     },
     {
       "@id": "https://orcid.org/0000-0002-5574-1370",
@@ -135,6 +115,26 @@
       },
       "familyName": "Laglil",
       "givenName": "Hajar"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9868-7546",
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "INRAE"
+      },
+      "familyName": "Barbier",
+      "givenName": "Marc"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8274-2718",
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "ESIEE Paris"
+      },
+      "familyName": "Villard",
+      "givenName": "Lionel"
     }
   ],
   "codeRepository": "https://github.com/cortext/how-to-cite-cortext",
