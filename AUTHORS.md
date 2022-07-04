@@ -10,6 +10,7 @@ Manager on academic works.
 * [cffconvert][cff-converter]
 * [biber][biber]
 * [biblatex-software][biblatex-software]
+* [jq][jq]
 
 ## Install dependencies
 
@@ -78,3 +79,4 @@ make apalike.apa
 [biblatex-software]: https://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-software
 [cff-converter]: https://github.com/citation-file-format/cff-converter-python
 [biber]: http://biblatex-biber.sourceforge.net
+[jq]: https://stedolan.github.io/jq
