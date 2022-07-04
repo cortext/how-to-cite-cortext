@@ -47,16 +47,6 @@ authors:
     family-names: Martinez
     email: martinec@cogniteva.fr
     affiliation: Cogniteva
-  - given-names: Marc
-    family-names: Barbier
-    email: marc.barbier@inrae.fr
-    affiliation: INRAE
-    orcid: 'https://orcid.org/0000-0002-9868-7546'
-  - given-names: Lionel
-    family-names: Villard
-    email: lionel.villard@esiee.fr
-    affiliation: ESIEE Paris
-    orcid: 'https://orcid.org/0000-0001-8274-2718'
   - given-names: Juan Pablo
     family-names: Ospina Delgado
     email: gnu.pablo@gmail.com
@@ -83,6 +73,16 @@ authors:
     family-names: Laglil
     email: hajar.laglil@edu.univ-eiffel.fr
     affiliation: LISIS
+  - given-names: Marc
+    family-names: Barbier
+    email: marc.barbier@inrae.fr
+    affiliation: INRAE
+    orcid: 'https://orcid.org/0000-0002-9868-7546'
+  - given-names: Lionel
+    family-names: Villard
+    email: lionel.villard@esiee.fr
+    affiliation: ESIEE Paris
+    orcid: 'https://orcid.org/0000-0001-8274-2718'
 
 # The identifiers of the software or dataset
 identifiers:
