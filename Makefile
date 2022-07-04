@@ -24,10 +24,12 @@ rm:
 codemeta.json:
 	cffconvert -f codemeta -o $@
 
-bibtex.bib:
-	cffconvert -f bibtex -o $@
-	sed -i 's/YourReferenceHere,/cortext_manager_v2_bibtex,\nkeywords = {cortext},/' $@
+bibtex.bib: codemeta.json
+	cffconvert -f bibtex -o $@.tmp
+	sed -i 's/YourReferenceHere,/cortext_manager_v2_bibtex,\nkeywords = {$$KEYWORDS},/' $@.tmp
+	KEYWORDS=$$(cat codemeta.json | jq -c ".keywords" | tr -d '"[]' | sed 's/,/, /g') envsubst < $@.tmp > $@
 	sed -i 's/^\(\w\)/  \1/' $@
+	$(RM) $@.tmp
 
 apalike.apa:
 	cffconvert -f apalike -o $@
