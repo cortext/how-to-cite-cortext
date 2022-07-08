@@ -117,16 +117,6 @@
       "givenName": "Hajar"
     },
     {
-      "@id": "https://orcid.org/0000-0002-9868-7546",
-      "@type": "Person",
-      "affiliation": {
-        "@type": "Organization",
-        "legalName": "INRAE"
-      },
-      "familyName": "Barbier",
-      "givenName": "Marc"
-    },
-    {
       "@id": "https://orcid.org/0000-0001-8274-2718",
       "@type": "Person",
       "affiliation": {
@@ -135,6 +125,16 @@
       },
       "familyName": "Villard",
       "givenName": "Lionel"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9868-7546",
+      "@type": "Person",
+      "affiliation": {
+        "@type": "Organization",
+        "legalName": "INRAE"
+      },
+      "familyName": "Barbier",
+      "givenName": "Marc"
     }
   ],
   "codeRepository": "https://github.com/cortext/how-to-cite-cortext",
