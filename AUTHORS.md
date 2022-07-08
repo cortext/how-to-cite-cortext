@@ -33,6 +33,13 @@ To update the format or data about how to cite CorTexT Manager edit the
 `CITATION.cff` accordingly
 [Citation File Format (CFF) schema guide][schema-guide].
 
+Every time `CITATION.cff` is modified you should rebuild all other files
+derivated from it by running:
+
+```sh
+make update
+```
+
 ## Update biblatex-software.bib
 
 Besides the `CITATION.cff` this file also must be updated manually, it is

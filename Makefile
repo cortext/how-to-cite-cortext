@@ -19,8 +19,6 @@ clean:
 	*.bcn *.run.xml *.bcf cortext.bib \
 	$(RM) -r _minted-*
 
-convert: rm codemeta.json bibtex.bib apalike.apa
-
 rm:
 	$(RM) codemeta.json bibtex.bib apalike.apa
 	$(RM) how-to-cite-cortext.pdf
@@ -46,3 +44,8 @@ install:
 uninstall:
 	$(RM) biblatex-software.zip software.dbx software.bbx *-software.lbx software-biblatex.sty
 	$(RM) -r biblatex-software
+
+build: codemeta.json bibtex.bib apalike.apa how-to-cite-cortext.pdf
+	@echo "do not forget to update biblatex-software.bib"
+
+update: rm build
